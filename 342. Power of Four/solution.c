@@ -1,9 +1,10 @@
 bool isPowerOfFour(int n){
-    if (n <= 0) {
-    return false;
-}
-    while (n%4==0) {
-    n/=4;
-}
-    return n==1;
+    if(n==0){
+        return false;
+    }
+        double result=log(n)/log(4);
+        if(result==round(result)){
+            return true;
+        }
+        return false;
 }
