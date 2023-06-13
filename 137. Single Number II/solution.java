@@ -8,11 +8,11 @@ class Solution {
             }
             else{
                 if(count<2){
-            return nums[i-1];
+                    return nums[i-1];
+                }
+                count=0;
+            }
         }
-        count=0;
-    }
-}
         return nums[nums.length-1];
     }
 }
