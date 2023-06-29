@@ -7,5 +7,6 @@ class Solution {
        arr[0]=k;
        arr[1]=f;
        return arr;
+       
     }
 }
