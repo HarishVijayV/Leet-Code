@@ -3,8 +3,7 @@ class Solution {
         Stack<Character> my = new Stack<>();
         for(char x:s.toCharArray()){
             if ((x=='{')||(x=='(')||(x=='[')){
-                my.push(x);
-            }
+                my.push(x);}
             if(!my.empty()){
                 if(x=='}'){
                     if (my.peek()=='{'){
