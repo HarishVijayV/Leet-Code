@@ -10,6 +10,7 @@ class Solution(object):
             if (ord(s[i])>=ord("a") and ord(s[i])<=ord('z')) or ((s[i])>='0' and (s[i]) <='9'):
                 continue
             else:
+                
                 s[i]=''
         s=''.join(s)
         if s==s[::-1]:
