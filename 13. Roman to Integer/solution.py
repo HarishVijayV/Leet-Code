@@ -14,7 +14,6 @@ class Solution(object):
                 result=result-current
             else:
                 result=result+current
-            
             prev=current
         return result
 
