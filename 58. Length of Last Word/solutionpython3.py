@@ -9,6 +9,3 @@ class Solution:
                 if s[i-1]==' ':
                     return c
         return c
-
-            
-        
