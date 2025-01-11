@@ -1,11 +1,9 @@
 class Solution:
     def sumCounts(self, nums: List[int]) -> int:
-        c=0
+        c = 0
         for i in range(len(nums)):
-            for j in range(i+1,len(nums),1):
-                c+=len(set(nums))*len(set(nums))
-        return c+len(nums)
-            
-
-            
-
+            seen = set()
+            for j in range(i, len(nums)):
+                seen.add(nums[j]) 
+                c += len(seen) * len(seen)  
+        return c
